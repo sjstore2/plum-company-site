@@ -14,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   main {
-    padding: 10px;
+    padding: 3rem;
   }
 `
 
