@@ -1,6 +1,6 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
-import Container from '../containers/Container'
+import Container, { Main }from '../containers/Container'
 
 let data = [
     {
@@ -37,7 +37,7 @@ let data = [
 
 const Home = () => {
     return (
-        <Container>
+        <>
             {data.map(obj => {
                 return <InfoSection
                 headline={obj.headline}
@@ -50,7 +50,7 @@ const Home = () => {
                 lightSection={obj.lightSection}
                 />
             })}
-        </Container>
+        </>
     )
 }
 

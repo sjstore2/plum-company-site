@@ -10,14 +10,13 @@ const InfoSec = styled.div`
 
 const InfoRow = styled.div`
     display: flex;
-    margin: 0 -15px -15px -15px;
+    padding: 16px;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: ${({ leadingImage }) =>  (leadingImage ? 'row-reverse' : 'row')};
 `
 
-const InfoColumn = styled.div`
-    padding: 0 15px;
+export const InfoColumn = styled.div`
     margin-bottom: 15px;
     max-width: 50%;
     flex-basis: 50%;
@@ -30,19 +29,24 @@ const InfoColumn = styled.div`
     }
 `
 
-const TextWrapper = styled.div`
+export const TextWrapper = styled.div`
     max-width: 540px;
     padding: 0 5rem;
     padding-bottom: 60px;
 `
 
 const Heading = styled.h1`
-    font-size: 48px;
+    font-size: 2rem;
     line-height: 1.1;
 `
 
 const Subtitle = styled.h2`
-    font-size: 18px;
+    font-size: 1.5rem;
+    max-width: 440px;
+    line-height: 24px;
+`
+const Subsubtitle = styled.h3`
+    font-size: 1rem;
     max-width: 440px;
     line-height: 24px;
 `
@@ -65,22 +69,25 @@ const Img = styled.img`
 const InfoSection = ({
 headline,
 subheading,
+subsubheading,
 description,
 leadingImage,
 img,
 start,
 alt,
-lightSection
+lightSection,
+className
 }) => {
     return (
         <>
-            <InfoSec lightSection={lightSection}>
+            <InfoSec className={className} lightSection={lightSection}>
                 <Container>
                     <InfoRow leadingImage={leadingImage}>
                         <InfoColumn>
                             <TextWrapper>
                                 <Heading>{headline}</Heading>
                                 <Subtitle>{subheading}</Subtitle>
+                                <Subsubtitle>{subsubheading}</Subsubtitle>
                                 <Description>{description}</Description>
                             </TextWrapper>
                         </InfoColumn>

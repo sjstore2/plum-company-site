@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Contain = styled.div`
+export const Contain = styled.div`
     padding: 1rem;
 `
 
-const Container = ({children}) => {
+const Container = ({className, children}) => {
     return (
-        <Contain>
+        <Contain className={className}>
            {children} 
         </Contain>
     )

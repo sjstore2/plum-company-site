@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
+import About from './pages/About'
 
 const AppRoutes = () => {
     return (
@@ -19,6 +20,7 @@ const UnauthorizedAppRoutes = () => {
     return (
         <>
             <Route path='/' exact component={Home} />
+            <Route path='/about-us' exact component={About} />
         </>
     )
 }

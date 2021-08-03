@@ -7,8 +7,10 @@ import { IconContext } from 'react-icons/lib'
 const Nav = styled.nav`
     background-color: #763459;
     display: flex;
+    position: fixed;
     height: 100px;
-    padding: 0.5rem calc((100vw - 1280px) / 2);
+    width: 100%;
+    /* padding: 0.5rem calc((100vw - 1280px) / 2); */
     justify-content: space-between;
     z-index: 10;
 `
