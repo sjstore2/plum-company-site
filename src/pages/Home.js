@@ -1,9 +1,9 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
-import Container, { Main }from '../containers/Container'
 
 let data = [
     {
+        key: 1,
         headline: "This has to be the easiest hack ever!",
         subheading: "Script kiddies are the worst.",
         description: "Some script kiddie got into a database he set up and now is wrecking havoc on his own computer. Luckily, nobody cares as no real harm is actually being done. He just thinks he is super cool.",
@@ -14,6 +14,7 @@ let data = [
         lightSection: true,
     },
     {
+        key: 2,
         headline: "This has to be the easiest hack ever!",
         subheading: "Script kiddies are the worst.",
         description: "Some script kiddie got into a database he set up and now is wrecking havoc on his own computer. Luckily, nobody cares as no real harm is actually being done. He just thinks he is super cool.",
@@ -24,6 +25,7 @@ let data = [
         lightSection: false,
     },
     {
+        key: 3,
         headline: "This has to be the easiest hack ever!",
         subheading: "Script kiddies are the worst.",
         description: "Some script kiddie got into a database he set up and now is wrecking havoc on his own computer. Luckily, nobody cares as no real harm is actually being done. He just thinks he is super cool.",
@@ -45,9 +47,10 @@ const Home = () => {
                 description={obj.description}
                 leadingImage={obj.leadingImage}
                 img={obj.img}
-                start={obj.start}
+                start={obj.start.toString()}
                 alt={obj.alt}
                 lightSection={obj.lightSection}
+                key={obj.key}
                 />
             })}
         </>

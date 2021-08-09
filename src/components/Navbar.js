@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { NavLink as Link } from 'react-router-dom'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import { IconContext } from 'react-icons/lib'
+import Dropdown from './Dropdown'
 
 const Nav = styled.nav`
     background-color: #763459;
@@ -25,7 +26,7 @@ const NavMenu = styled.ul`
     align-items: center;
     list-style: none;
     text-align: center;
-    padding: -0;
+    padding: 0;
     @media screen and (max-width: 790px) {
         display: flex;
         flex-direction: column;
@@ -59,7 +60,7 @@ const NavLink = styled(Link)`
     &.active {
         color: coral;
         > span {
-            padding: 3px 0;
+            padding: 5px 0;
             border-top: solid 1px coral;
             border-bottom: solid 1px coral;
         }
@@ -101,7 +102,20 @@ const Navbar = () => {
                 </MobileIcon>
                 <NavMenu onClick={handleClick} click={click}>
                     <NavItem>
-                        <NavLink to='/about-us'><span>About Us</span></NavLink>
+                        <Dropdown 
+                        header="About us"
+                        links={[
+                            {
+                                key: 0,
+                                url: "/subsiduaries",
+                                text: "Our Subsiduaries"
+                            },
+                            {
+                                key: 1,
+                                url: "/the-team",
+                                text: "Meet the team"
+                            },
+                        ]}/>
                     </NavItem>
                     <NavItem>
                         <NavLink to='/services'><span>Services</span></NavLink>

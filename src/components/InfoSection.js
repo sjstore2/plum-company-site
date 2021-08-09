@@ -55,7 +55,7 @@ const Description = styled.p``
 
 const ImageWrapper = styled.div`
     display: flex;
-    justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
+    justify-content: ${(props) => (props.start ? 'flex-start' : 'flex-end')};
 `
 
 const Img = styled.img`

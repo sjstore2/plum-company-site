@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 let data = [
     {
+        key: 0,
         fullName: "Luisella Barese",
         title: {abbr:"CEO", full:"Chief Executive Officer"},
         quote: "Here is what I have to say about this company!",
@@ -13,6 +14,7 @@ let data = [
         contact: "luisella.barese.plum@protonmail.com"
     },
     {
+        key: 1,
         fullName: "David Vacek",
         title: {abbr:"CFO", full:"Chief Financial Officer"},
         quote: "Here is what I have to say about this company!",
@@ -21,6 +23,7 @@ let data = [
         contact: "david.vacek.plum@protonmail.com"
     },
     {
+        key: 2,
         fullName: "Johan van der Gouw",
         title: {abbr:"COO", full:"Chief Operations Officer"},
         quote: "Here is what I have to say about this company!",
@@ -29,6 +32,7 @@ let data = [
         contact: "johan.van.der.gouw.plum@protonmail.com"
     },
     {
+        key: 3,
         fullName: "Kiera Webster",
         title: {abbr:"CIO", full:"Chief Information Officer"},
         quote: "Here is what I have to say about this company!",
@@ -37,6 +41,7 @@ let data = [
         contact: "kiera.webster.plum@protonmail.com"
     },
     {
+        key: 4,
         fullName: "Stefan Pettersson",
         title: {abbr:"", full:"Group Information Security Manager"},
         quote: "Here is what I have to say about this company!",
@@ -45,6 +50,7 @@ let data = [
         contact: "stefan.pettersson.plum@protonmail.com"
     },
     {
+        key: 5,
         fullName: "Davi Ribeiro Almeida",
         title: {abbr:"CISO", full:"Chief Information Security Officer"},
         quote: "Here is what I have to say about this company!",
@@ -53,6 +59,7 @@ let data = [
         contact: "davi.ribeiro.almeida.plum@protonmail.com"
     },
     {
+        key: 6,
         fullName: "Amber Sage",
         title: {abbr:"CISO", full:"Chief Information Security Officer"},
         quote: "Here is what I have to say about this company!",
@@ -61,6 +68,7 @@ let data = [
         contact: "amber.sage.plum@protonmail.com"
     },
     {
+        key: 7,
         fullName: "Alisha Fleming",
         title: {abbr:"CISO", full:"Chief Information Security Officer"},
         quote: "Here is what I have to say about this company!",
@@ -69,6 +77,7 @@ let data = [
         contact: "alisa.fleming.plum@protonmail.com"
     },
     {
+        key: 8,
         fullName: "Jessica Luft",
         title: {abbr:"HR", full:"Head of Global HR Services"},
         quote: "Here is what I have to say about this company!",
@@ -77,6 +86,7 @@ let data = [
         contact: "jessica.luft.plum@protonmail.com"
     },
     {
+        key: 9,
         fullName: "Jan Itor",
         title: {abbr:"", full:"Global Facilities"},
         quote: "Here is what I have to say about this company!",
@@ -85,6 +95,7 @@ let data = [
         contact: "jan.itor.plum@protonmail.com"
     },
     {
+        key: 10,
         fullName: "Alice Kirillova",
         title: {abbr:"", full:"Group Internal Audit Manager"},
         quote: "Here is what I have to say about this company!",
@@ -93,6 +104,7 @@ let data = [
         contact: "alice.kirillova.plum@protonmail.com"
     },
     {
+        key: 11,
         fullName: "Eluemuno Chukwumaobim",
         title: {abbr:"", full:"Lead Technical Architect"},
         quote: "Here is what I have to say about this company!",
@@ -172,7 +184,7 @@ const About = () => {
                         />
                         <CardGallery>
                                 {data.map(card => {
-                                    return <CardContainer>
+                                    return <CardContainer key={card.key}>
                                         <AboutCard
                                         headline={card.fullName}
                                         subheading={card.title.full}

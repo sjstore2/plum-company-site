@@ -20,7 +20,7 @@ const UnauthorizedAppRoutes = () => {
     return (
         <>
             <Route path='/' exact component={Home} />
-            <Route path='/about-us' exact component={About} />
+            <Route path='/the-team' exact component={About} />
         </>
     )
 }
