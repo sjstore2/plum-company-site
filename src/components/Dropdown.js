@@ -4,25 +4,29 @@ import { NavLink as Link } from 'react-router-dom'
 import { FaCaretDown } from 'react-icons/fa'
 import Container from '../containers/Container'
 
-const DropMenu = styled.ul`
+const DropMenu = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-    width: 10rem;
+    width: 8rem;
     text-decoration: none;
     cursor: pointer;
     color: #fff;
     padding: 0.5rem 0;
+    margin: 0;
     /* border: solid 2px yellow; */
     flex-direction: column;
     z-index: 10;
+
+    @media screen and (max-width: 790px) {
+        width: 100vw;
+        padding-bottom: 0;
+        /* border: solid 2px yellow;   */
+    }
 `
 
 const SubMenu = styled.ul`
     /* border: solid 2px green; */
-    /* position: relative; */
-    /* translate: -2.5rem 0; */
-    width: 10rem;
     /* width: 100%; */
     list-style: none;
     text-align: center;
@@ -32,31 +36,56 @@ const SubMenu = styled.ul`
     justify-content: space-around;
     padding: 0;
     background: #763459;
-    margin-top: 2rem;
+    /* margin-top: 0.5rem; */
     display: ${({open}) => open ? 'block' : 'none'};
-    `
+    transition: all 0.2s ease;
+
+    @media screen and (max-width: 790px) {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+`
 
 const SubMenuItem = styled.li`
     width: 100%;
-    /* border: solid 2px pink; */
     text-align: center;
-    padding: 5px 0;
-    `
+    padding: 10px 0;
+    /* height: 40px; */
+    /* border: solid 1px cyan; */
+
+    :hover {
+        background-color: #823e65;
+        /* b05187 */
+    }
+`
 
 const SubMenuLink = styled(Link)`
     text-decoration: none;
     color: #fff;
-    padding: 1rem;
+    /* padding: 1rem; */
 `
 
 const Header = styled.div`
     /* border: solid 2px blue; */
     width: 100%;
+    padding-top: 14px;
+    padding-bottom: 0;
+
+    @media screen and (max-width: 790px) {
+        display: none;
+    }
 `
 
 const DropDownContainer = styled(Container)`
     /* border: solid 2px orange; */
-    padding: 0px;
+    height: 100%;
+    /* width: 100%; */
+    padding: 0;
+
+    @media screen and (max-width: 790px) {
+        height: auto;
+    }
 `
 
 const Dropdown = (props) => {

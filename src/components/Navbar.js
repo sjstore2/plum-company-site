@@ -27,6 +27,8 @@ const NavMenu = styled.ul`
     list-style: none;
     text-align: center;
     padding: 0;
+    /* border: solid 1px blue; */
+
     @media screen and (max-width: 790px) {
         display: flex;
         flex-direction: column;
@@ -42,6 +44,8 @@ const NavMenu = styled.ul`
 
 const NavItem = styled.li`
     height: 40px;
+    /* border: solid 1px pink; */
+
     @media screen and (max-width: 790px) {
         width: 100%;
     }
@@ -55,7 +59,11 @@ const NavLink = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     color: #fff;
-    padding: 0 1rem;
+    padding-right: 1rem;
+
+    :hover {
+        background-color: #823e65;
+    }
 
     &.active {
         color: coral;
@@ -69,7 +77,42 @@ const NavLink = styled(Link)`
     @media screen and (max-width: 790px) {
         justify-content: center;
         width: 100%;
-        display: table;
+        padding: 0;
+    }
+`
+
+const DeadLink = styled.a`
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    padding-right: 1rem;
+
+    :hover {
+        background-color: #823e65;
+    }
+
+    &.active {
+        color: coral;
+        > span {
+            padding: 5px 0;
+            border-top: solid 1px coral;
+            border-bottom: solid 1px coral;
+        }
+    }
+
+    @media screen and (max-width: 790px) {
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+`
+
+const BannerNav = styled(NavLink)`
+    :hover {
+        background-color: #763459;
     }
 `
 
@@ -94,32 +137,37 @@ const Navbar = () => {
         <>
         <IconContext.Provider value={{color: '#fff'}}>
             <Nav>
-                <NavLink to='/'>
+                <BannerNav to='/'>
                     <NavImage src='/images/plum.png' alt='plum logo' />
-                </NavLink>
+                </BannerNav>
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}
                 </MobileIcon>
                 <NavMenu onClick={handleClick} click={click}>
+                    <Dropdown 
+                    header="About us"
+                    links={[
+                        {
+                            key: 0,
+                            url: "/subsiduaries",
+                            text: "Our Subsiduaries"
+                        },
+                        {
+                            key: 1,
+                            url: "/people",
+                            text: "Meet the team"
+                        },
+                    ]}/>
                     <NavItem>
-                        <Dropdown 
-                        header="About us"
-                        links={[
-                            {
-                                key: 0,
-                                url: "/subsiduaries",
-                                text: "Our Subsiduaries"
-                            },
-                            {
-                                key: 1,
-                                url: "/the-team",
-                                text: "Meet the team"
-                            },
-                        ]}/>
+                        <NavLink to='/services'><span>Jobs Board</span></NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to='/services'><span>Services</span></NavLink>
+                        {/* TODO make sure that this link works and is acceptable for andrea */}
+                        <NavLink to={{pathname: process.env.REACT_APP_CORPORATE_SHARE}} target='_blank'><span>Intranet</span></NavLink>
                     </NavItem>
+                    {/* <NavItem>
+                        <NavLink to='/services'><span>Jobs Board</span></NavLink>
+                    </NavItem> */}
                 </NavMenu>
             </Nav>
         </IconContext.Provider>
