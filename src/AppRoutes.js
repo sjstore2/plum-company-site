@@ -6,7 +6,7 @@ import Team from './pages/Team'
 import Company from './pages/Company'
 import Layout from './components/Layout'
 import Profile from './pages/Profile'
-import JobsBoard from './components/JobsBoard'
+import Jobs from './pages/Jobs'
 import JobListing from './components/JobListing'
 
 
@@ -46,7 +46,7 @@ const UnauthorizedAppRoutes = () => {
             <Route path='/people/:id' component={Profile} />
             <Route path='/subsiduaries/:id' component={Profile} />
             {/* Yes these two above are supposed to be the same, they utilise the same component*/}
-            <Route path='/jobs' exact component={JobsBoard} />
+            <Route path='/jobs' exact component={Jobs} />
             <Route path='/jobs/:id' component={JobListing} />
             {/* <Route path='/intranet'  component={() => {
                 window.location.href = process.env.REACT_APP_CORPORATE_SHARE;

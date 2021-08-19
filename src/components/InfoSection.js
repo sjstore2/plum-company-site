@@ -67,13 +67,13 @@ const Img = styled.img`
     max-height: 500px;
 `
 
-const ActionContainer = styled.div`
+export const ActionContainer = styled.div`
     display:flex;
     width: 100%;
     justify-content: space-around;
 `
 
-const ActionLink = styled(NavLink)`
+export const ActionLink = styled(NavLink)`
     display:flex;
     justify-content: center;
     background-color: #763459;

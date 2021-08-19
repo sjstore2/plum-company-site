@@ -7,26 +7,36 @@ import data from '../data/db.json'
 
 const JobBoard = styled(Container)`
     display: flex;
-    border: solid 1px pink;
+    justify-content: space-around;
     flex-flow: row wrap;
 `
 
 const JobPost = styled(Container)`
-    width: 100%;
     display: flex;
-    border: solid 1px green;
+    justify-content: center;
+    border: solid 1px coral;
+    box-shadow: 2px 2px 2px grey;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 750px) {
+        padding: 0;
+        width: 100%;
+    }
 `
 
 const JobSection = styled(InfoSection)`
-    padding: 0px;
+    padding: 0 4rem;
     display: flex;
     justify-content: center;
-    border: solid 1px blue;
-    width: 100%;
+
+    @media screen and (max-width: 750px) {
+        padding: 0;
+        width: 100%;
+    }
 `
 
 const JobsBoard = () => {
-    const [jobPosts, setJobPosts] = useState(data.jobsBoard)
+    const [jobPosts] = useState(data.jobsBoard)
     return (
         <>
             <JobBoard>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import InfoSection, { TextWrapper }from '../components/InfoSection'
+import InfoSection, { TextWrapper, ActionContainer, ActionLink }from '../components/InfoSection'
 import Container, { Contain } from '../containers/Container'
 import styled from 'styled-components'
 
@@ -26,6 +26,15 @@ export const AboutCard = styled(InfoSection)`
 
     ${TextWrapper} {
         padding: 0 2rem;
+    }
+    
+    ${ActionContainer} {
+        flex-flow: nowrap column;
+        align-items: center;
+    }
+
+    ${ActionLink} {
+        margin: 5px 0;
     }
 `
 
@@ -93,7 +102,7 @@ const Team = () => {
                                             lightSection="true"
                                             callsToAction={employee.callsToAction}
                                             >
-                                                {employee.quote}
+                                                {/* {employee.quote} */}
                                             </AboutCard>
                                         </CardContainer>
                                 })}

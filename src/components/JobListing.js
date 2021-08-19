@@ -26,7 +26,7 @@ const JobListing = ({match}) => {
 
     useEffect(() => {
         for (let obj of data.jobsBoard) {
-            if (obj.id == match.params.id) {
+            if (obj.id === match.params.id) {
                 console.log(obj);
                 setJobListing(obj);
                 setIsLoading(false);
