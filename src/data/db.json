@@ -9,7 +9,7 @@
             "department": "",
             "social": "",
             "email": "luisella.barese.plum@protonmail.com",
-            "imagePath": "/images/social/CEO.jpg",
+            "imagePath": "images/social/CEO.jpg",
             "profileId": 1,
             "callsToAction": [
                 {
@@ -28,7 +28,7 @@
             "department": "",
             "social": "",
             "email": "david.vacek.plum@protonmail.com",
-            "imagePath": "/images/social/CFO.jpg",
+            "imagePath": "images/social/CFO.jpg",
             "profileId": 2,
             "callsToAction": [
                 {
@@ -47,7 +47,7 @@
             "department": "",
             "social": "",
             "email": "johan.van.der.gouw.plum@protonmail.com",
-            "imagePath": "/images/social/COO.jpg",
+            "imagePath": "images/social/COO.jpg",
             "profileId": 3,
             "callsToAction": [
                 {
@@ -66,7 +66,7 @@
             "department": "",
             "social": "",
             "email": "kiera.webster.plum@protonmail.com",
-            "imagePath": "/images/social/CIO.jpg",
+            "imagePath": "images/social/CIO.jpg",
             "profileId": 4,
             "callsToAction": [
                 {
@@ -85,7 +85,7 @@
             "department": "",
             "social": "",
             "email": "stefan.pettersson.plum@protonmail.com",
-            "imagePath": "/images/social/Group Information Security Manager.jpg",
+            "imagePath": "images/social/Group Information Security Manager.jpg",
             "profileId": 5,
             "callsToAction": [
                 {
@@ -104,7 +104,7 @@
             "department": "Defence",
             "social": "",
             "email": "davi.ribeiro.almeida.plum@protonmail.com",
-            "imagePath": "/images/social/CISO Defence.jpg",
+            "imagePath": "images/social/CISO Defence.jpg",
             "profileId": 6,
             "callsToAction": [
                 {
@@ -123,7 +123,7 @@
             "department": "Managed Services",
             "social": "",
             "email": "amber.sage.plum@protonmail.com",
-            "imagePath": "/images/social/CISO Managed Services.jpg",
+            "imagePath": "images/social/CISO Managed Services.jpg",
             "profileId": 7,
             "callsToAction": [
                 {
@@ -142,7 +142,7 @@
             "department": "Engineering and Integration",
             "social": "",
             "email": "alisa.fleming.plum@protonmail.com",
-            "imagePath": "/images/social/CISO Engineering and Integration.jpg",
+            "imagePath": "images/social/CISO Engineering and Integration.jpg",
             "profileId": 8,
             "callsToAction": [
                 {
@@ -161,7 +161,7 @@
             "department": "",
             "social": "",
             "email": "jessica.luft.plum@protonmail.com",
-            "imagePath": "/images/social/HR.jpg",
+            "imagePath": "images/social/HR.jpg",
             "profileId": 9,
             "callsToAction": [
                 {
@@ -180,7 +180,7 @@
             "department": "",
             "social": "",
             "email": "jan.itor.plum@protonmail.com",
-            "imagePath": "/images/social/Global Facilities.jpg",
+            "imagePath": "images/social/Global Facilities.jpg",
             "profileId": 10,
             "callsToAction": [
                 {
@@ -199,7 +199,7 @@
             "department": "",
             "social": "",
             "email": "alice.kirillova.plum@protonmail.com",
-            "imagePath": "/images/social/Group Internal Audit Manager.jpg",
+            "imagePath": "images/social/Group Internal Audit Manager.jpg",
             "profileId": 11,
             "callsToAction": [
                 {
@@ -218,7 +218,7 @@
             "department": "",
             "social": "",
             "email": "alice.kirillova.plum@protonmail.com",
-            "imagePath": "/images/social/Lead Technical Architect.jpg",
+            "imagePath": "images/social/Lead Technical Architect.jpg",
             "profileId": 12,
             "callsToAction": [
                 {
@@ -236,7 +236,7 @@
             "subheading": "Security considerations being taken",
             "description": "A global pandemic has had significant impact across all divisions with staff having to work from home. Whilst this is quite normal for certain areas such as consulting roles; this has been particularly problematic for our call centere operations and certain technical roles. Operations are continuing to run in a relatively reduced capacity. We are currently taking into considerations the security concerns ragarding this sudden shift to working form home.",
             "leadingImage": true,
-            "imgPath": "/images/splash/info1.jpg",
+            "imgPath": "images/splash/info1.jpg",
             "start": true,
             "alt": "work from home",
             "lightSection": true
@@ -247,7 +247,7 @@
             "subheading": "Provisioning managed services and support",
             "description": "In order to incrase our Managed Services aquisition to reach out to new clients, as well as provided longer operational support hours. Plum Ltd. are looking to expand their business by founding new Managed Services departments in Australia and the United States. Whilst broadening our market the main intentions of this expansion is to move toward providing 24/7 custom and support.",
             "leadingImage": false,
-            "imgPath": "/images/splash/info2.jpg",
+            "imgPath": "images/splash/info2.jpg",
             "start": false,
             "alt": "",
             "lightSection": false
@@ -260,7 +260,7 @@
             "subheading": "",
             "description": "This is a specialist company that serves the defence sector.  The defence services business has its own specialist network and systems and security programme given the sensitivity of its work.  The Defence services arm is a List X UK Government contractor.  The defence services company has approximately 1000 staff in the UK.  This company provides security consulting and managed services to defence organisations alongside the development, implementation and maintenance of specialist applications and communications systems and networks. ",
             "leadingImage": true,
-            "imagePath": "/images/subsiduaries/subsiduary1.jpg",
+            "imagePath": "images/subsiduaries/subsiduary1.jpg",
             "start": true,
             "alt": "",
             "lightSection": true,
@@ -278,7 +278,7 @@
             "subheading": "Soon to be 24/7",
             "description": "The managed services arm focuses on the provision of managed security services (e.g. SOC, vulnerability assessments, audits etc.), network monitoring and engineering alongside services such as helpdesk outsourcing.  This arm of the business is the largest with 3,000 employees.  Many of the standard managed service offerings (1st, 2nd line) are delivered by a sub-contracted third party based in India although specialist services are delivered locally as are cases for government clients. Plum is looking to open sub offices in the US and Australia to ensure a 24 hours a day specialist service. Customer support services are based within managed services.",
             "leadingImage": true,
-            "imagePath": "/images/subsiduaries/subsiduary2.jpg",
+            "imagePath": "images/subsiduaries/subsiduary2.jpg",
             "start": true,
             "alt": "",
             "lightSection": true,
@@ -296,7 +296,7 @@
             "subheading": "",
             "description": "The Systems Engineering and Integration organisation focuses on the design, build and implementation of tailor made solutions for clients globally in multiple sectors.  This organisation works closely with Plum Software, often deploying tailor made or Plum solutions into client organisations.  Services offered by this organisation range from the installation and maintenance of hardware to software, to the management of services from cloud providers and third party partners.  This organisation also has a specialised team with knowledge of ICSs that could ultimately serve the global market in this area. The linux engineers and systems administrators are largely based in this entity.",
             "leadingImage": true,
-            "imagePath": "/images/subsiduaries/subsiduary3.jpg",
+            "imagePath": "images/subsiduaries/subsiduary3.jpg",
             "start": true,
             "alt": "",
             "lightSection": true,
@@ -314,7 +314,7 @@
             "subheading": "",
             "description": "Plum Software develops both off the shelf products including productivity tools such as Customer Relationship Management (CRM) and Document Management software which are often sold and deployed by the Systems Engineering and Integration Team.  In addition to this Plum Software develops bespoke applications for clients with support from subcontractors where required. They are also considering building a dedicated software development team based in India to run alongside the Managed Services division. Plum Software mainly uses Python, Java and C++.",
             "leadingImage": true,
-            "imagePath": "/images/subsiduaries/subsiduary4.jpg",
+            "imagePath": "images/subsiduaries/subsiduary4.jpg",
             "start": true,
             "alt": "",
             "lightSection": true,
@@ -437,7 +437,7 @@
             "profileAbout": [
                 {
                     "headline": "Defense services",
-                    "imagePath": "/images/subsiduaries/subsiduary1.jpg",
+                    "imagePath": "images/subsiduaries/subsiduary1.jpg",
                     "leadingImage": false,
                     "textItems": [
                         "At Plum we work with a number of different clients in the provision of security and operational support. Whether you require ad hoc, single day consultancy, or a multiple year, multi-disciplined support team, our Subject Matter Experts (SME) have experience and knowledge of all aspects of supporting Defence capability on a diverse range of platforms, equipment, systems and services. In addition to supporting the MOD directly we also support the Defence industry. This includes Airworthiness, Engineering, Operational and Safety support for the delivery of systems and services to be deployed as a part of military capability. Threats to national security are constantly evolving, whether they’re military, cyber or terror. So organisations must evolve to meet them. We help government organisations and police forces reshape and reorganise to counter threats and keep people safe. And we help aerospace, defence and security businesses anticipate and meet their clients’ needs.",
@@ -446,7 +446,7 @@
                 },
                 {
                     "headline": "",
-                    "imagePath": "/images/subsiduaries/subsiduary1-1.jpg",
+                    "imagePath": "images/subsiduaries/subsiduary1-1.jpg",
                     "leadingImage": true,
                     "textItems": [
                         "Following nearly two decades of 'upstream' military intervention to contain threats such as terrorism and drugs production before they reached the UK's shores, recent experience has increased the focus on home-grown threats such as radicalisation, lone-actor terrorism and serious organised crime. This has raised awareness of the role of illicit finance as the universal enabler for terrorism, crime and many state-sponsored threats. And yet, the structure of the UK's security and policing sector is largely unreformed, numbering over 70 independent organisations, all pursuing broadly similar capabilities, and competing for the same scarce skills and talent, albeit to meet different mission priorities.",
@@ -478,7 +478,7 @@
             "profileAbout": [
                 {
                     "headline": "Managed services",
-                    "imagePath": "/images/subsiduaries/subsiduary2-1.jpg",
+                    "imagePath": "images/subsiduaries/subsiduary2-1.jpg",
                     "leadingImage": false,
                     "textItems": [
                         "Managed security service providers, also known as MSSPs, provide cybersecurity outsourcing options covering a range of security needs. These services may include patching and vulnerability management and reporting, threat intelligence, incident response, and other services. Additionally, MSSPs provide their own expertise and knowledge on emerging threats and security developments. Plum offers these services within their managed services division.",
@@ -508,7 +508,7 @@
                 },
                 {
                     "headline": "",
-                    "imagePath": "/images/subsiduaries/subsiduary2-2.jpg",
+                    "imagePath": "images/subsiduaries/subsiduary2-2.jpg",
                     "leadingImage": true,
                     "textItems": [
                         "Our services also encompass a wider range of IT functions and operations, including managing cloud infrastructure, cloud computing, and other resource or operationally-intensive functions. Our managed security service providers specialise in removing digital security burdens from their clients’ IT or operations teams. In order to focus on the unique expertise and resources required in digital security.",
@@ -551,7 +551,7 @@
             "profileAbout": [
                 {
                     "headline": "Systems Engineering and Integration",
-                    "imagePath": "/images/subsiduaries/subsiduary3-1.jpg",
+                    "imagePath": "images/subsiduaries/subsiduary3-1.jpg",
                     "leadingImage": false,
                     "textItems": [
                         "For over 20 years, Plum has helped clients achieve step-change improvements in their OT/ICS reliability and security. Everything we do is about bringing our expertise to help overcome the challenges of secure and reliable IT-OT systems. Plum systems engineering and integration offers the only Endpoint Protection Platform built for OT/ICS Cyber Security. We combine the platform with leading ICS/OT engineers who provide turnkey support every step of the way. We are your partner in your OT/ICS security journey.",
@@ -612,7 +612,7 @@
             "profileAbout": [
                 {
                     "headline": "Plum Software",
-                    "imagePath": "/images/subsiduaries/subsiduary4-1.png",
+                    "imagePath": "images/subsiduaries/subsiduary4-1.png",
                     "leadingImage": false,
                     "textItems": [
                         "Plum delivers end-to-end software products and solutions from concept to code and development to deployment. Our software development services include custom software & application development, cloud-based enterprise & web application development and connected mobile application development. With our experience in next-generation software solutions and services, we help drive digital transformation. We assist our clients in selecting the most competent and cost-effective platform to build their applications.",
@@ -623,7 +623,7 @@
                 },
                 {
                     "headline": "",
-                    "imagePath": "/images/subsiduaries/subsiduary4-2.jpg",
+                    "imagePath": "images/subsiduaries/subsiduary4-2.jpg",
                     "leadingImage": true,
                     "textItems": [
                         "Why Choose Plum: "

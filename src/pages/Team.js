@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import InfoSection, { TextWrapper, ActionContainer, ActionLink }from '../components/InfoSection'
+import InfoSection, { TextWrapper, ActionContainer, ActionLink } from '../components/InfoSection'
 import Container, { Contain } from '../containers/Container'
 import styled from 'styled-components'
 
