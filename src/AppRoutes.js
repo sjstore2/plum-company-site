@@ -12,7 +12,7 @@ import JobListing from './components/JobListing'
 
 const AppRoutes = () => {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Layout>
                 <Switch>
                     <UnauthorizedAppRoutes />
