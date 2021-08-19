@@ -96,7 +96,7 @@ const Team = () => {
                                             subheading={employee.titleFull}
                                             subsubheading={employee.department}
                                             leadingImage="true"
-                                            imagePath={employee.imagePath}
+                                            imagePath={process.env.PUBLIC_URL + employee.imagePath}
                                             start="true"
                                             alt={`${employee.titleAbbr} ${employee.fullName}`}
                                             lightSection="true"

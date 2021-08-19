@@ -87,7 +87,7 @@ const Subsiduaries = () => {
                     headline={obj.fullName}
                     subheading={obj.subheading}
                     leadingImage={obj.leadingImage.toString()}
-                    imagePath={obj.imagePath}
+                    imagePath={process.env.PUBLIC_URL + obj.imagePath}
                     start={obj.start.toString()}
                     alt={obj.alt}
                     lightSection={obj.lightSection.toString()}

@@ -66,7 +66,7 @@ const Profile = ({match}) => {
             */}
             { match.path.split("/")[1] === "people" ? (
             <ProfileSection
-            image={'imagePath' in entity ? entity.imagePath : null}
+            image={'imagePath' in entity ? process.env.PUBLIC_URL + entity.imagePath : null}
             alt={'imagePath' in entity ? entity.fullName : null}>
                 <h1>{entity.fullName}</h1>
                 <h2>{entity.titleFull}</h2>
@@ -80,7 +80,7 @@ const Profile = ({match}) => {
                         headline={element.headline}
                         subheading={element.subheading}
                         leadingImage={"leadingImage" in element ? element.leadingImage.toString() : null}
-                        imagePath={element.imagePath}
+                        imagePath={process.env.PUBLIC_URL + element.imagePath}
                         start={"true"}
                         alt={element.alt}
                         lightSection={"true"}

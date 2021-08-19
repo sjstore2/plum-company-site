@@ -11,7 +11,7 @@ const Home = () => {
                 headline={obj.headline}
                 subheading={obj.subheading}
                 leadingImage={obj.leadingImage.toString()}
-                imagePath={obj.imgPath}
+                imagePath={process.env.PUBLIC_URL + obj.imgPath}
                 start={obj.start.toString()}
                 alt={obj.alt}
                 lightSection={obj.lightSection.toString()}

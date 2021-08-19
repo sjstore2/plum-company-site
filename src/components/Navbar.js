@@ -109,7 +109,7 @@ const Navbar = () => {
         <IconContext.Provider value={{color: '#fff'}}>
             <Nav>
                 <BannerNav to='/'>
-                    <NavImage src='/images/plum.png' alt='plum logo' />
+                    <NavImage src={process.env.PUBLIC_URL + '/images/plum.png'} alt='plum logo' />
                 </BannerNav>
                 <MobileIcon onClick={handleClick}>
                     {click ? <FaTimes /> : <FaBars />}

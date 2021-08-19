@@ -12,7 +12,7 @@ import JobListing from './components/JobListing'
 
 const AppRoutes = () => {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename='/plum-company-site'>
             <Layout>
                 <Switch>
                     <UnauthorizedAppRoutes />
