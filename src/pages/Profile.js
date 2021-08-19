@@ -80,7 +80,7 @@ const Profile = ({match}) => {
                         headline={element.headline}
                         subheading={element.subheading}
                         leadingImage={"leadingImage" in element ? element.leadingImage.toString() : null}
-                        imagePath={process.env.PUBLIC_URL + element.imagePath}
+                        imagePath={element.imagePath ? process.env.PUBLIC_URL + element.imagePath : null}
                         start={"true"}
                         alt={element.alt}
                         lightSection={"true"}
