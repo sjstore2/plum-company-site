@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
 import InfoSection, { TextWrapper }from '../components/InfoSection'
 import Container, { Contain } from '../containers/Container'
 import styled from 'styled-components'
@@ -39,7 +38,7 @@ const CardGallery = styled(Container)`
 `
 
 const CardContainer = styled(Container)`
-    width: 100%;
+    width: 48%;
     padding: 0;
     
     @media screen and (max-width: 1250px) {
@@ -47,16 +46,18 @@ const CardContainer = styled(Container)`
     }
 `
 
-const CardLink = styled(NavLink)`
-    width: 48%; // this is the flex item inside the card gallery, to wrap it all in a link
-    text-decoration: none;
-    cursor: pointer;
-    display: flex;
+// Not currently required
+// was used to wrap the whole card in a clickable link to take to individual person page
+// const CardLink = styled(NavLink)`
+//     width: 48%; // this is the flex item inside the card gallery, to wrap it all in a link
+//     text-decoration: none;
+//     cursor: pointer;
+//     display: flex;
 
-    @media screen and (max-width: 1250px) {
-        width: 100%;
-    }
-`
+//     @media screen and (max-width: 1250px) {
+//         width: 100%;
+//     }
+// `
 
 const Team = () => {
 
@@ -80,8 +81,7 @@ const Team = () => {
                         />
                         <CardGallery>
                                 {employees.map(employee => {
-                                    return <CardLink key={employee.id} to={`/people/${employee.id}`} >
-                                        <CardContainer>
+                                    return <CardContainer key={employee.id}>
                                             <AboutCard
                                             headline={employee.fullName}
                                             subheading={employee.titleFull}
@@ -91,11 +91,11 @@ const Team = () => {
                                             start="true"
                                             alt={`${employee.titleAbbr} ${employee.fullName}`}
                                             lightSection="true"
+                                            callsToAction={employee.callsToAction}
                                             >
                                                 {employee.quote}
                                             </AboutCard>
                                         </CardContainer>
-                                    </CardLink>
                                 })}
                         </CardGallery>
                 </Container>

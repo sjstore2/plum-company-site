@@ -10,7 +10,14 @@
             "social": "",
             "email": "luisella.barese.plum@protonmail.com",
             "imagePath": "/images/social/CEO.jpg",
-            "profileId": 1
+            "profileId": 1,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "https://www.linkedin.com/in/luisella-barese-82881221a/",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 1,
@@ -22,7 +29,14 @@
             "social": "",
             "email": "david.vacek.plum@protonmail.com",
             "imagePath": "/images/social/CFO.jpg",
-            "profileId": 2
+            "profileId": 2,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "https://www.linkedin.com/in/david-vacek-b7924221a/",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 2,
@@ -34,7 +48,14 @@
             "social": "",
             "email": "johan.van.der.gouw.plum@protonmail.com",
             "imagePath": "/images/social/COO.jpg",
-            "profileId": 3
+            "profileId": 3,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 3,
@@ -46,7 +67,14 @@
             "social": "",
             "email": "kiera.webster.plum@protonmail.com",
             "imagePath": "/images/social/CIO.jpg",
-            "profileId": 4
+            "profileId": 4,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 4,
@@ -58,7 +86,14 @@
             "social": "",
             "email": "stefan.pettersson.plum@protonmail.com",
             "imagePath": "/images/social/Group Information Security Manager.jpg",
-            "profileId": 5
+            "profileId": 5,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 5,
@@ -70,7 +105,14 @@
             "social": "",
             "email": "davi.ribeiro.almeida.plum@protonmail.com",
             "imagePath": "/images/social/CISO Defence.jpg",
-            "profileId": 6
+            "profileId": 6,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 6,
@@ -82,7 +124,14 @@
             "social": "",
             "email": "amber.sage.plum@protonmail.com",
             "imagePath": "/images/social/CISO Managed Services.jpg",
-            "profileId": 7
+            "profileId": 7,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 7,
@@ -94,7 +143,14 @@
             "social": "",
             "email": "alisa.fleming.plum@protonmail.com",
             "imagePath": "/images/social/CISO Engineering and Integration.jpg",
-            "profileId": 8
+            "profileId": 8,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 8,
@@ -106,7 +162,14 @@
             "social": "",
             "email": "jessica.luft.plum@protonmail.com",
             "imagePath": "/images/social/HR.jpg",
-            "profileId": 9
+            "profileId": 9,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 9,
@@ -118,7 +181,14 @@
             "social": "",
             "email": "jan.itor.plum@protonmail.com",
             "imagePath": "/images/social/Global Facilities.jpg",
-            "profileId": 10
+            "profileId": 10,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 10,
@@ -130,7 +200,14 @@
             "social": "",
             "email": "alice.kirillova.plum@protonmail.com",
             "imagePath": "/images/social/Group Internal Audit Manager.jpg",
-            "profileId": 11
+            "profileId": 11,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         },
         {
             "id": 11,
@@ -142,7 +219,14 @@
             "social": "",
             "email": "alice.kirillova.plum@protonmail.com",
             "imagePath": "/images/social/Lead Technical Architect.jpg",
-            "profileId": 12
+            "profileId": 12,
+            "callsToAction": [
+                {
+                    "text": "LinkedIn",
+                    "actionLink": "",
+                    "external": true
+                }
+            ]
         }
     ],
     "splashposts": [
@@ -154,7 +238,7 @@
             "leadingImage": true,
             "imgPath": "/images/splash/info1.jpg",
             "start": true,
-            "alt": "dumb script kiddie",
+            "alt": "work from home",
             "lightSection": true
         },
         {
@@ -165,7 +249,7 @@
             "leadingImage": false,
             "imgPath": "/images/splash/info2.jpg",
             "start": false,
-            "alt": "dumb script kiddie",
+            "alt": "",
             "lightSection": false
         }
     ],
@@ -178,10 +262,15 @@
             "leadingImage": true,
             "imagePath": "/images/subsiduaries/subsiduary1.jpg",
             "start": true,
-            "alt": "dumb script kiddie",
+            "alt": "",
             "lightSection": true,
             "profileId": 14,
-            "callToAction": "click here to find out more"
+            "callsToAction": [
+                {
+                    "text": "click here to find out more",
+                    "actionLink": ""
+                }
+            ]
         },
         {
             "id": 2,
@@ -191,10 +280,15 @@
             "leadingImage": true,
             "imagePath": "/images/subsiduaries/subsiduary2.jpg",
             "start": true,
-            "alt": "dumb script kiddie",
+            "alt": "",
             "lightSection": true,
             "profileId": 15,
-            "callToAction": "click here to find out more"
+            "callsToAction": [
+                {
+                    "text": "click here to find out more",
+                    "actionLink": ""
+                }
+            ]
         },
         {
             "id": 3,
@@ -204,10 +298,15 @@
             "leadingImage": true,
             "imagePath": "/images/subsiduaries/subsiduary3.jpg",
             "start": true,
-            "alt": "dumb script kiddie",
+            "alt": "",
             "lightSection": true,
             "profileId": 16,
-            "callToAction": "click here to find out more"
+            "callsToAction": [
+                {
+                    "text": "click here to find out more",
+                    "actionLink": ""
+                }
+            ]
         },
         {
             "id": 4,
@@ -217,10 +316,15 @@
             "leadingImage": true,
             "imagePath": "/images/subsiduaries/subsiduary4.jpg",
             "start": true,
-            "alt": "dumb script kiddie",
+            "alt": "",
             "lightSection": true,
             "profileId": 17,
-            "callToAction": "click here to find out more"
+            "callsToAction": [
+                {
+                    "text": "click here to find out more",
+                    "actionLink": ""
+                }
+            ]
         }
     ],
     "profiles": [
@@ -542,5 +646,155 @@
             ]
         }
     ],
-    "services": []
+    "jobsBoard": [
+        {
+            "id": "ja98pzefh43oifponaljsdf",
+            "company": "PLUM Limited",
+            "title": "Security Analyst",
+            "description": "PLUM Limited are hiring a Security Analyst",
+            "callsToAction": [
+                {
+                    "text": "click here to find out more"
+                }
+            ],
+            "sections": [
+                {
+                    "header": "Company",
+                    "paragraphs": [
+                        "Plum Ltd. is a provider of cyber technology software development and consulting services based in the UK. Plum Ltd.was formed in 1995 and is a specialist provider of technology products and services to the defense sector and has grown over the years branching into multiple markets.",
+                        "Plum Ltd.has 10,000 employees based in the UK but is looking for offices in other locations in the US and Australia to offer a 24 hour a day service to its customers.",
+                        "Plum Ltd core customers are:",
+                        "Defence organisations- Plum Ltd. has significant contracts for supporting core IT,communication and operational systems of the UK MoD, US DoD and NATO. Plum Ltd. are often engaged on projects involving SECRET and TOP SECRET information assets and systems.",
+                        "Central Government organisations - Plum Ltd. have been engaged in major government system integrations, developing specific software solutions alongside providing managed services such as Security Operation Centre (SOC) services and defensive and offensive security capabilities.",
+                        "Industrial organisations. Given Plum Ltd.specialist engineering background they have deep expertise in Industrial Control Systems (ICS) and provide managed security services to major clients in sectors such as Oil and Gas, Water management and electricity distribution.",
+                        "Financial institutions. Plum Ltd.have provided specialist security services, including threat and intelligence monitoring to global financial institutions."
+                    ],
+                    "bulletSection": []
+                },
+                {
+                    "header": "Key Responsibilities of the Security Analyst",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "Carrying out audits to ensure that compliance with security standards such as ISO27001 are met",
+                        "Use SIEM technology to monitor networks for security alerts",
+                        "Analyse threats, breaches and vulnerabilities such as malware"
+                    ]
+                },
+                {
+                    "header": "PLUM Limited",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "Carrying out vulnerability scans and organising Penetration Tests with 3rd party suppliers",
+                        "Working with external security professionals and business stakeholders to simulate security breaches and document incident response plans as required",
+                        "Monitoring identify and access management, including monitoring for abuse of permissions by authorised system users",
+                        "Researching/evaluating emerging cyber security threats and ways to manage them",
+                        "Liaising with stakeholders in relation to cyber security issues and provide future recommendations",
+                        "Generating reports for both technical and non-technical staff and stakeholders",
+                        "Maintaining the information security risk register and assist with internal and external audits relating to information security",
+                        "Assisting with the creation, maintenance and delivery of cyber security awareness training"
+                    ]
+                },
+                {
+                    "header": "This is an entry level position with no experience required, however the ideal candidate will be able to demonstrate the following:",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "A basic understanding of Information Security",
+                        "Desire to enhance knowledge and develop further skills within the field by dedicated self-study",
+                        "A basic understanding of risk management and control frameworks",
+                        "A basic understanding of SIEM Technology / Penetration Testing and Network Security",
+                        "Someone who is up to date with security news and the current threat landscape"
+                    ]
+                },
+                {
+                    "header": "Essential Skills:",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "Excellent team player",
+                        "Prioritisation and organisational skills",
+                        "Clear dn transparent communication",
+                        "Critical Thinking and Problem Solving",
+                        "Decision Making",
+                        "Adaptability, Presntable, professional and punctual"
+                    ]
+                }
+            ]
+        },
+
+
+        {
+            "id": "ja98pzefh43oifponaljsdf",
+            "company": "PLUM Limited",
+            "title": "Security Analyst",
+            "description": "PLUM Limited are hiring a Security Analyst",
+            "callsToAction": [
+                {
+                    "text": "click here to find out more"
+                }
+            ],
+            "sections": [
+                {
+                    "header": "Company",
+                    "paragraphs": [
+                        "Plum Ltd. is a provider of cyber technology software development and consulting services based in the UK. Plum Ltd.was formed in 1995 and is a specialist provider of technology products and services to the defense sector and has grown over the years branching into multiple markets.",
+                        "Plum Ltd.has 10,000 employees based in the UK but is looking for offices in other locations in the US and Australia to offer a 24 hour a day service to its customers.",
+                        "Plum Ltd core customers are:",
+                        "Defence organisations- Plum Ltd. has significant contracts for supporting core IT,communication and operational systems of the UK MoD, US DoD and NATO. Plum Ltd. are often engaged on projects involving SECRET and TOP SECRET information assets and systems.",
+                        "Central Government organisations - Plum Ltd. have been engaged in major government system integrations, developing specific software solutions alongside providing managed services such as Security Operation Centre (SOC) services and defensive and offensive security capabilities.",
+                        "Industrial organisations. Given Plum Ltd.specialist engineering background they have deep expertise in Industrial Control Systems (ICS) and provide managed security services to major clients in sectors such as Oil and Gas, Water management and electricity distribution.",
+                        "Financial institutions. Plum Ltd.have provided specialist security services, including threat and intelligence monitoring to global financial institutions."
+                    ],
+                    "bulletSection": []
+                },
+                {
+                    "header": "Key Responsibilities of the Security Analyst",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "Carrying out audits to ensure that compliance with security standards such as ISO27001 are met",
+                        "Use SIEM technology to monitor networks for security alerts",
+                        "Analyse threats, breaches and vulnerabilities such as malware"
+                    ]
+                },
+                {
+                    "header": "PLUM Limited",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "Carrying out vulnerability scans and organising Penetration Tests with 3rd party suppliers",
+                        "Working with external security professionals and business stakeholders to simulate security breaches and document incident response plans as required",
+                        "Monitoring identify and access management, including monitoring for abuse of permissions by authorised system users",
+                        "Researching/evaluating emerging cyber security threats and ways to manage them",
+                        "Liaising with stakeholders in relation to cyber security issues and provide future recommendations",
+                        "Generating reports for both technical and non-technical staff and stakeholders",
+                        "Maintaining the information security risk register and assist with internal and external audits relating to information security",
+                        "Assisting with the creation, maintenance and delivery of cyber security awareness training"
+                    ]
+                },
+                {
+                    "header": "This is an entry level position with no experience required, however the ideal candidate will be able to demonstrate the following:",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "A basic understanding of Information Security",
+                        "Desire to enhance knowledge and develop further skills within the field by dedicated self-study",
+                        "A basic understanding of risk management and control frameworks",
+                        "A basic understanding of SIEM Technology / Penetration Testing and Network Security",
+                        "Someone who is up to date with security news and the current threat landscape"
+                    ]
+                },
+                {
+                    "header": "Essential Skills:",
+                    "paragraphs": [],
+                    "bulletSection": [
+                        "Excellent team player",
+                        "Prioritisation and organisational skills",
+                        "Clear dn transparent communication",
+                        "Critical Thinking and Problem Solving",
+                        "Decision Making",
+                        "Adaptability, Presntable, professional and punctual"
+                    ]
+                }
+            ]
+        }
+
+
+        
+    ]
 }

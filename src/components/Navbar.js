@@ -81,35 +81,6 @@ const NavLink = styled(Link)`
     }
 `
 
-const DeadLink = styled.a`
-    display: flex;
-    align-items: center;
-    height: 100%;
-    text-decoration: none;
-    cursor: pointer;
-    color: #fff;
-    padding-right: 1rem;
-
-    :hover {
-        background-color: #823e65;
-    }
-
-    &.active {
-        color: coral;
-        > span {
-            padding: 5px 0;
-            border-top: solid 1px coral;
-            border-bottom: solid 1px coral;
-        }
-    }
-
-    @media screen and (max-width: 790px) {
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-    }
-`
-
 const BannerNav = styled(NavLink)`
     :hover {
         background-color: #763459;
@@ -159,15 +130,11 @@ const Navbar = () => {
                         },
                     ]}/>
                     <NavItem>
-                        <NavLink to='/services'><span>Jobs Board</span></NavLink>
+                        <NavLink to='/jobs'><span>Jobs Board</span></NavLink>
                     </NavItem>
                     <NavItem>
-                        {/* TODO make sure that this link works and is acceptable for andrea */}
                         <NavLink to={{pathname: process.env.REACT_APP_CORPORATE_SHARE}} target='_blank'><span>Intranet</span></NavLink>
                     </NavItem>
-                    {/* <NavItem>
-                        <NavLink to='/services'><span>Jobs Board</span></NavLink>
-                    </NavItem> */}
                 </NavMenu>
             </Nav>
         </IconContext.Provider>

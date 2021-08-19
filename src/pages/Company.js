@@ -92,7 +92,7 @@ const Subsiduaries = () => {
                     alt={obj.alt}
                     lightSection={obj.lightSection.toString()}
                     key={obj.key}
-                    callToAction={obj.callToAction}
+                    callsToAction={obj.callsToAction}
                     actionLink={`/subsiduaries/${obj.id}`}
                     >
                         {obj.description}

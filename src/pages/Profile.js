@@ -88,7 +88,7 @@ const Profile = ({match}) => {
                         key={element.key}
                         >
                             {"textItems" in element ? element.textItems.map(par => {
-                                return <p>{par}</p>
+                                return <p key={`par${element.textItems.indexOf(par)}`}>{par}</p>
                             }) : null}
                         </SubsiduarySection>
                     })}

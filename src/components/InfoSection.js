@@ -22,6 +22,7 @@ export const InfoColumn = styled.div`
     max-width: ${({imagePath}) => imagePath ? "50%" : "100%"};
     flex-basis: 50%;
     flex: 1;
+    display: flex;
     @media screen and (max-width: 790px) {
         max-width: 100%;
         flex-basis: 100%;
@@ -69,7 +70,7 @@ const Img = styled.img`
 const ActionContainer = styled.div`
     display:flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-around;
 `
 
 const ActionLink = styled(NavLink)`
@@ -107,7 +108,7 @@ start,
 alt,
 lightSection,
 className,
-callToAction,
+callsToAction,
 actionLink,
 bulletList,
 children
@@ -128,7 +129,7 @@ children
                                 <InfoBulletList>
                                 {bulletList ? 
                                 bulletList.map(item => {
-                                        return <li>
+                                        return <li key={bulletList.indexOf(item)}>
                                             <Highlight>{item.highlight}</Highlight>
                                             {item.text}
                                         </li>
@@ -136,10 +137,17 @@ children
                                 : null}
                                 </InfoBulletList>
                                 {/* optional call to action */}
-                                {callToAction ? 
                                 <ActionContainer>
-                                    <ActionLink to={actionLink}>{callToAction}</ActionLink>
-                                </ActionContainer> : null}
+                                {callsToAction ?
+                                 callsToAction.map(call => {
+                                    return (
+                                        call.external ?
+                                        <ActionLink to={{pathname: call.actionLink}} target='_blank' key={callsToAction.indexOf(call)}>{call.text}</ActionLink> :
+                                        <ActionLink to={call.actionLink || actionLink} key={callsToAction.indexOf(call)}>{call.text}</ActionLink>
+                                    )
+                                 })
+                                 : null}
+                                 </ActionContainer>
                                    
                             </TextWrapper>
                         </InfoColumn>
