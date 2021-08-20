@@ -42,16 +42,15 @@ const UnauthorizedAppRoutes = () => {
             <Route path='/' exact component={Home} />
             <Route path='/people' exact component={Team} />
             <Route path='/subsiduaries' exact component={Company} />
-            {/* Yes these two below are supposed to be the same, they utilise the same component*/}
-            <Route path='/people/:id' component={Profile} />
+            {/* 
+                Yes these two below are supposed to be the same, they utilise the same component
+                the people route not in use as moved to social buttons
+            */}
+            {/* <Route path='/people/:id' component={Profile} /> */}
             <Route path='/subsiduaries/:id' component={Profile} />
             {/* Yes these two above are supposed to be the same, they utilise the same component*/}
             <Route path='/jobs' exact component={Jobs} />
             <Route path='/jobs/:id' component={JobListing} />
-            {/* <Route path='/intranet'  component={() => {
-                window.location.href = process.env.REACT_APP_CORPORATE_SHARE;
-                return null;
-            }}/> */}
         </>
     )
 }

@@ -50,8 +50,8 @@ const NavItem = styled.li`
         width: 100%;
     }
 
-    & Link, a {
-        display: flex;
+    & .link {
+    display: flex;
     align-items: center;
     height: 100%;
     text-decoration: none;
@@ -158,12 +158,13 @@ const Navbar = () => {
                         },
                     ]}/>
                     <NavItem>
-                        <Link to='/jobs'><span>Jobs Board</span></Link>
+                        <Link className="link" to='/jobs'><span>Jobs Board</span></Link>
                     </NavItem>
                     <NavItem>
-                        {/* // FIXME this link currently does not work as intended */}
-                        {/* <NavLink to={{pathname: process.env.REACT_APP_CORPORATE_SHARE}} target='_blank'><span>Intranet</span></NavLink> */}
-                        <a href={process.env.REACT_APP_CORPORATE_SHARE} target='_blank' rel="noreferrer">Intranet</a>
+                        <span className="link" onClick={() => {
+                            window.open('https://drive.google.com/drive/folders/1mJ000vGMezx9mMwWVngpqG-WIdscaMWL?usp=sharing', '_blank');
+                            return null;
+                        }} target='_blank' rel="noreferrer">Intranet</span>
                     </NavItem>
                 </NavMenu>
             </Nav>
