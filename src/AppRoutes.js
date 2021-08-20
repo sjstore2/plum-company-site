@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Team from './pages/Team'
@@ -12,7 +12,7 @@ import JobListing from './components/JobListing'
 
 const AppRoutes = () => {
     return (
-        <Router basename='/plum-company-site'>
+        <Router>
             <Layout>
                 <Switch>
                     <UnauthorizedAppRoutes />
