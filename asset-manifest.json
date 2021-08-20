@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.b03998ed.chunk.js",
-    "main.js.map": "/static/js/main.b03998ed.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b5478310.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b5478310.js.map",
-    "static/js/2.0d685d31.chunk.js": "/static/js/2.0d685d31.chunk.js",
-    "static/js/2.0d685d31.chunk.js.map": "/static/js/2.0d685d31.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.0d685d31.chunk.js.LICENSE.txt": "/static/js/2.0d685d31.chunk.js.LICENSE.txt"
+    "main.js": "/plum-company-site/static/js/main.26875c73.chunk.js",
+    "main.js.map": "/plum-company-site/static/js/main.26875c73.chunk.js.map",
+    "runtime-main.js": "/plum-company-site/static/js/runtime-main.386a60b0.js",
+    "runtime-main.js.map": "/plum-company-site/static/js/runtime-main.386a60b0.js.map",
+    "static/js/2.b93a1a75.chunk.js": "/plum-company-site/static/js/2.b93a1a75.chunk.js",
+    "static/js/2.b93a1a75.chunk.js.map": "/plum-company-site/static/js/2.b93a1a75.chunk.js.map",
+    "index.html": "/plum-company-site/index.html",
+    "static/js/2.b93a1a75.chunk.js.LICENSE.txt": "/plum-company-site/static/js/2.b93a1a75.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5478310.js",
-    "static/js/2.0d685d31.chunk.js",
-    "static/js/main.b03998ed.chunk.js"
+    "static/js/runtime-main.386a60b0.js",
+    "static/js/2.b93a1a75.chunk.js",
+    "static/js/main.26875c73.chunk.js"
   ]
 }
