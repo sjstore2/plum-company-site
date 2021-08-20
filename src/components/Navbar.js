@@ -50,6 +50,34 @@ const NavItem = styled.li`
         width: 100%;
     }
 
+    & Link, a {
+        display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    padding-right: 1rem;
+
+        :hover {
+            background-color: #823e65;
+        }
+
+        &.active {
+            color: coral;
+            > span {
+                padding: 5px 0;
+                border-top: solid 1px coral;
+                border-bottom: solid 1px coral;
+            }
+        }
+
+        @media screen and (max-width: 790px) {
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+        }
+    }
 `
 
 const NavLink = styled(Link)`
@@ -130,10 +158,12 @@ const Navbar = () => {
                         },
                     ]}/>
                     <NavItem>
-                        <NavLink to='/jobs'><span>Jobs Board</span></NavLink>
+                        <Link to='/jobs'><span>Jobs Board</span></Link>
                     </NavItem>
                     <NavItem>
-                        <NavLink to={{pathname: process.env.REACT_APP_CORPORATE_SHARE}} target='_blank'><span>Intranet</span></NavLink>
+                        {/* // FIXME this link currently does not work as intended */}
+                        {/* <NavLink to={{pathname: process.env.REACT_APP_CORPORATE_SHARE}} target='_blank'><span>Intranet</span></NavLink> */}
+                        <a href={process.env.REACT_APP_CORPORATE_SHARE} target='_blank' rel="noreferrer">Intranet</a>
                     </NavItem>
                 </NavMenu>
             </Nav>

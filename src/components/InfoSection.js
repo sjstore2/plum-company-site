@@ -71,17 +71,18 @@ export const ActionContainer = styled.div`
     display:flex;
     width: 100%;
     justify-content: space-around;
-`
 
-export const ActionLink = styled(NavLink)`
-    display:flex;
-    justify-content: center;
-    background-color: #763459;
-    color: #fff;
-    font-weight: bold;
-    width: 15rem;
-    border-radius: 25px;
-    padding: 5px;
+    & Navlink, a {
+        display:flex;
+        justify-content: center;
+        background-color: #763459;
+        color: #fff;
+        font-weight: bold;
+        width: 15rem;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 5px 0;
+    }
 `
 
 const Highlight = styled.span`
@@ -142,8 +143,8 @@ children
                                  callsToAction.map(call => {
                                     return (
                                         call.external ?
-                                        <ActionLink to={{pathname: call.actionLink}} target='_blank' key={callsToAction.indexOf(call)}>{call.text}</ActionLink> :
-                                        <ActionLink to={call.actionLink || actionLink} key={callsToAction.indexOf(call)}>{call.text}</ActionLink>
+                                        <a href={call.actionLink} target='_blank' key={callsToAction.indexOf(call)} rel="noreferrer">{call.text}</a> :
+                                        <NavLink to={call.actionLink || actionLink} key={callsToAction.indexOf(call)}>{call.text}</NavLink>
                                     )
                                  })
                                  : null}

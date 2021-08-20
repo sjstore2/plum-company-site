@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import InfoSection, { TextWrapper, ActionContainer, ActionLink } from '../components/InfoSection'
+import InfoSection, { TextWrapper, ActionContainer } from '../components/InfoSection'
+import { NavLink } from 'react-router-dom'
 import Container, { Contain } from '../containers/Container'
 import styled from 'styled-components'
 
@@ -31,10 +32,6 @@ export const AboutCard = styled(InfoSection)`
     ${ActionContainer} {
         flex-flow: nowrap column;
         align-items: center;
-    }
-
-    ${ActionLink} {
-        margin: 5px 0;
     }
 `
 
